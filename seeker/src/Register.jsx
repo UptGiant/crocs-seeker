@@ -11,7 +11,7 @@ export const Register = (props) => {
     }
     return (
         <div className="auth-form">
-            <form onSubmit={handleSubmint}>
+            <form className="register-form" onSubmit={handleSubmint}>
                 <label htmlFor="username">username</label>
                 <input value={username} onChange={(sub) => setUserName(sub.target.value)} type="username" id="username" name="username"/>
                 <label htmlFor="email">email</label>
