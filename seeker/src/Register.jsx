@@ -14,7 +14,7 @@ export const Register = (props) => {
             <form onSubmit={handleSubmint}>
                 <label htmlFor="username">username</label>
                 <input value={username} onChange={(sub) => setUserName(sub.target.value)} type="username" id="username" name="username"/>
-                <label htmlFor="username">username</label>
+                <label htmlFor="email">email</label>
                 <input value={email} onChange={(sub) => setEmail(sub.target.value)} type="email" id="email" name="email"/>
                 <label htmlFor="password">password</label>
                 <input value={password} onChange={(sub) => setPassword(sub.target.value)} type="password" id="password" name="password"/>
