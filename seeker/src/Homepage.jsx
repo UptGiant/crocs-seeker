@@ -27,7 +27,7 @@ const Search = () => {
             <input
               value={searchTerm}
               onChange={(e) => {setsearchTerm(e.target.value)}}
-              placeholder="Seach For Movies"
+              placeholder="Search For Movies"
             />
             <img
               src={SearchIcon}
@@ -39,7 +39,7 @@ const Search = () => {
           {movie.length > 0 ? (
           <div className="container">
             {movie.map((movie) => (
-              <Home movie={movie} />
+              <Homepage movie={movie[0]} />
             ))}
           </div>
           ) : (
@@ -50,7 +50,7 @@ const Search = () => {
         </div>
       );
     }
-export const Home = ({ movie }) => {
+export const Homepage = ({ movie }) => {
     return (
     <div className="Movie">
         <div>
