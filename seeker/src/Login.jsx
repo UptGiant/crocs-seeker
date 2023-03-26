@@ -4,14 +4,16 @@ export const Login = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleSubmint = (sub) => {
+    const handleSubmit = (sub) => {
         sub.preventDefault();
-        console.log(email);
+        console.log(email, password);
     }
+
 
     return (
         <div className="auth-form">
-            <form className="login-form" onSubmit={handleSubmint}>
+            <h1>Login</h1>
+            <form className="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="email">email</label>
                 <input value={email} onChange={(sub) => setEmail(sub.target.value)} placeholder="abc@gmail.com" type="email" id="email" name="email"/>
                 <label htmlFor="password">password</label>

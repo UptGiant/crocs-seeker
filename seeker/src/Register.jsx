@@ -5,13 +5,14 @@ export const Register = (props) => {
     const [password, setPassword] = useState('');
     const [username, setUserName] = useState('');
 
-    const handleSubmint = (sub) => {
+    const handleSubmit = (sub) => {
         sub.preventDefault();
         console.log(email);
     }
     return (
         <div className="auth-form">
-            <form className="register-form" onSubmit={handleSubmint}>
+            <h1>Register</h1>
+            <form className="register-form" onSubmit={handleSubmit}>
                 <label htmlFor="username">username</label>
                 <input value={username} onChange={(sub) => setUserName(sub.target.value)} type="username" id="username" name="username"/>
                 <label htmlFor="email">email</label>
